@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-08 16:24:25
+ * @version $Id$
+ */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+}
+p {
+	padding: 5px;
+	border: 1px solid #fcc;
+	background: #9cc;
+	width: 330px;
+	position: absolute;
+	left: 50px;
+	top: 100px;
+}

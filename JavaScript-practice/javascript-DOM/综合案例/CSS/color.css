@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-10 00:36:51
+ * @version $Id$
+ */
+
+body {
+	color: #fb5;
+	background: #334;
+}
+a:link {
+	color: #334;
+	background: #eb6;
+}
+a:visited {
+	color: #345;
+	background: #eb6;
+}
+a:hover {
+	color: #ec8;
+	background: #fb5;
+}
+a:active {
+	color: #778;
+	background: #ec8;
+}
+header {
+	color: #ec8;
+	background: #000;
+	border-color: #667;
+}
+header nav {
+	color: #223;
+	background: #789;
+	border-color: #667;
+}
+article {
+	color: #223;
+	background: #edc;
+	border-color: #667;
+}
+header nav a:link, header nav a:visited {
+	color: #eef;
+	background: transparent;
+	border-color: #99a;
+}
+header nav a:hover {
+	color: #445;
+	background: #eb6;
+}
+header nav a:active {
+	color: #667;
+	background: #eb6;
+}
+article img {
+	border-color: #ba9;
+	outline-color: #dcb;
+}
+#imagegallery a {
+	background: transparent;
+}
+header nav a.here:link, header nav a.here:link, header nav a.here:link, header nav a.here:link {
+	color: #eef;
+	background: #799;
+}

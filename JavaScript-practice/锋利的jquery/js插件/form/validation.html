@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>validation</title>
+	<script type="text/javascript" src="../../jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="lib/jquery.validate.js"></script>
+	<script type="text/javascript" src="lib/jquery.validate.messages_cn.js"></script>
+	<link rel="stylesheet" href="css.css">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#commentForm").validate();
+		});
+	</script>
+</head>
+<body>
+	<form class="cmxform" id="commentForm" method="get" action="#">
+		<fieldset>
+			<legend>一个简单的验证待验证提示的评论例子</legend>
+			<p>
+				<label for="cusername">姓名</label><em>*</em>
+				<input id="cusername" name="username"
+					size="25" class="required" minlength="2" />
+			</p>
+			<p>
+				<label for="cemail">电子邮件</label><em>*</em>
+				<input id="cemail" name="email"
+					size="25" class="required email" minlength="2" />
+			</p>
+			<p>
+				<label for="curl">网址</label><em>&nbsp</em>
+				<input id="curl" name="url"
+					size="25" class="url" minlength="2" />
+			</p>
+			<p>
+				<label for="ccomment">你的评论</label><em>*</em>
+				<textarea id="ccomment" name="comment"
+					cols="22" class="required"></textarea>
+			</p>
+			<p>
+				<input class="submit" type="submit" value="提交" />
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

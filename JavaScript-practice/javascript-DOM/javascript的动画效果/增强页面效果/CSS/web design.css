@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-08 18:49:45
+ * @version $Id$
+ */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#slideshow {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}

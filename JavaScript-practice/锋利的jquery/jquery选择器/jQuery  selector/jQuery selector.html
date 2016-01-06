@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery selector</title>
+	<link rel="stylesheet" href="CSS/jQuery selector.css">
+	<script type="text/javascript" src="JS/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div class="one" id="one">
+		id is one and class is one
+		<div class="mini">class name is mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id:two, class:one and title:text 
+		<div class="mini" title="other">class mini,title  is other</div>
+		<div class="mini" title="test">class mini,title  is test</div>
+	</div>
+	<div class="one">
+		<div class="mini">class name is mini</div>
+		<div class="mini">class name is mini</div>
+		<div class="mini">class name is mini</div>
+		<div class="mini"></div>
+	</div>
+	<div class="one">
+		<div class="mini">class name is mini</div>
+		<div class="mini">class name is mini</div>
+		<div class="mini">class name is mini</div>
+		<div class="mini" title="tesst"> class is mini,title is tesst</div>
+	</div>
+	<div style="display: none;" class="none">
+		the box's display is none，class name is none
+	</div>
+	<div class="hide">class name is hide</div>
+	<div>
+		the box include a input,and input's type is "hidden"<input type="hidden" size="8" /> 
+	</div>
+	<span id="mover">a span element doing a movie</span>
+	<script type="text/javascript" src="JS/hierarchy selector.js"></script>
+</body>
+</html>
