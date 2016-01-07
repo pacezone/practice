@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-07 11:31:32
+ * @version $Id$
+ */
+.picBox {
+	width: 600px;
+	height: 300px;
+}
+.pic {
+	border: 1px solid #000;
+	background: url(1.jpg);
+}

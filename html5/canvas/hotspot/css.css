@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-07 09:13:42
+ * @version $Id$
+ */
+.see {
+	background: url(423413ce8843cfd8339ecc0aa6ea945d_r.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border: 1px solid #000;
+}
+.reset_button {
+	font-size: 20px;
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 5px; 
+}
