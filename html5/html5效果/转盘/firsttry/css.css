@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-11 15:45:57
+ * @version $Id$
+ */
+.circle_box {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	height: 0;
+	position: relative;
+}
+.circle_bg {
+	width: 100%;
+	/*border: 1px solid #000;*/
+	margin:0;
+	padding: 0;
+	position: absolute;
+}
+.pointer_bg {
+	position: absolute;
+	cursor: pointer;
+	border: 0;
+	border-radius: 1000px;
+	width: 7rem;
+	background: #FF4350;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 20px;
+	outline: none;
+}
+.circle_pointer {
+	position: absolute;
+	width: 100%;
+}
