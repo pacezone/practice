@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-15 10:27:53
+ * @version $Id$
+ */
+.coupon_wrapper {
+	margin-top: 20px;
+	display: table;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.coupon_wrapper li {
+	float: left;
+	width: 31%;
+	background: #B0E0E6;
+	height: 200px;
+	margin-right: 3%;
+	margin-bottom: 12px;
+	cursor: pointer;
+	transition: transform 2s;
+}
+.coupon_wrapper li:nth-child(3n+3) {
+	margin-right: 0;
+}
+.rotate {
+	transform: rotateY(360deg);
+}
+.coupon_wrapper li img {
+	width: 100%;
+}
