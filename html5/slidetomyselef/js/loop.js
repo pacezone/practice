@@ -4,9 +4,7 @@
  * @date    2016-08-31 22:08:19
  * @version $Id$
  */
-var contain = document.getElementById('contain');
-
-
+		var contain = document.getElementById('contain');
 var startNode = $('#contain li:first').clone(true);
 var endNode = $('#contain li:last').clone(true);
 var l = 0;
@@ -16,13 +14,20 @@ $('#contain').prepend(endNode);
 var contents = $('#contain').find('li');
 var len = contents.length;
 var conW = $('#contain').width();
-for (var i = 0; i < contents.length; i++) {
+$(document).ready(function() {
+
+
+var init = function(){
+	for (var i = 0; i < contents.length; i++) {
 	contents[i].style.transform= 'translate3d('+(i-1)*(conW)+'px,0px,0px)';
-}
-$('#contain').css('transform', 'translate3d(0px,0px,0px)');
+	}
+	contain.style.transform = 'translate3d(500px,0px,0px)';
+}();
 
 
+});
 var getTransitionX = function(el) {
+	console.log(el)
 	var curStyle = window.getComputedStyle(el, null);
 if (window.WebKitCSSMatrix) {
 	var curTransform = curStyle.transform || curStyle.webkitTransform;
@@ -51,39 +56,38 @@ if (window.WebKitCSSMatrix) {
 
 
 
-var setTransition = function(el,l) {
-	el.css('transform', 'translate3d('+l+'px,0px,0px)').css('transition-duration','900ms');
-	if (Math.round(-l/conW) == (len-1)) {
-		console.log('111')
-		el.css('transform', 'translate3d(0px,0px,0px)').css('transition-duration','0ms');
-	} else if (Math.round(l/conW)==1) {
-		
-		el.css('transform', 'translate3d('+(len-2)*(-conW)+'px,0px,0px)').css('transition-duration','0ms');
+var setloop = function(el) { 
+	var w = getTransitionX(el);
+	if (Math.round(-w/conW) == (len-2)) {
+		setTransition(el,0,0);
+	} else if (Math.round(w/conW)==0) {
+		var x= (len-2)*(-conW)
+		setTransition(el,x,0);
 	}
-	
 }
+var setTransition = function(el,l,duration) {
+	duration = duration + 'ms';
+	el.style.transitionDuration= duration;
+	el.style.transform='translate3d('+l+'px,0px,0px)';
 
-var slidePre = function() {
-	var l = Math.round(getTransitionX(contain)+conW);
-	setTransition($('#contain'),l)
-	// console.log(l)
-};
+
+}
 var slideNext = function() {
 	var l = Math.round(getTransitionX(contain)-conW);
-	setTransition($('#contain'),l)
-	// console.log(l)
-	
+	setTransition(contain,l,350);
+};
+var slidePre = function() {
+	var l = Math.round(getTransitionX(contain)+conW);
+	setTransition(contain,l,350);	
 };
 
-$('#next').click(function(){
 
+$('#next').click(function(){
+	setloop(contain);
 	slideNext()
+	
 })
 $('#pre').click(function() {
+	setloop(contain);
 	slidePre()
 })
-// setInterval(slideNext,2000);
-// $('#pre').click(function() {
-// 	k--;
-// 	$('#contain').css('transform', 'translate3d('+(-k)*devW+'px,0px,0px)');
-// });
