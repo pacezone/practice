@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-10-03 13:59:58
+ * @version $Id$
+ */
+
+
+table {
+	border: 1px solid #000;
+	width: 300px;
+	text-align: left;
+}
+body {
+	font-size: 16px;
+	font-family: "宋体", "Helvetica Neue", Helvetica, sans-serif;
+}
+thead tr th {
+	border-bottom: 1px solid #000;
+}
+tr, td {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+.even {
+	background: #fff38f;
+}
+.odd {
+	background: #ffffee;
+}

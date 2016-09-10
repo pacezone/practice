@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-10-03 14:41:12
+ * @version $Id$
+ */
+
+ul, li {
+	list-style: none;
+}
+div, ul, li {	
+	margin: 0;
+	padding: 0;
+}
+.tab {
+	border: 1px solid #000;
+	padding: 10px;
+	width: 300px;
+	margin: 0 auto;
+}
+.tab_menu {
+	overflow: hidden;
+}
+ul li {
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #02A8DB;
+	border-bottom: 0px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.selected {
+	background: #02a8db;
+	color: #fff;
+}
+.tab_box {
+	width: 300px;
+	height: 150px;
+	border: 1px solid #000;
+}
+.hide {
+	display: none;
+}

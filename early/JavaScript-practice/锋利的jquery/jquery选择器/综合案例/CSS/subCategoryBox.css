@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-21 23:13:09
+ * @version $Id$
+ */
+ body {
+ 	text-align: center;
+ 	font-family: Verdana, Geneva, sans-serif;
+ 	font-size: 16px;
+ }
+ ul, li {
+ 	list-style: none;
+ }
+a{
+	text-decoration: none;
+	color: #000;
+}
+ div, ul, li {
+ 	margin: 0;
+ 	padding: 0;
+ }
+ .SubCategoryBox {
+ 	width: 600px;
+ 	margin: 0 auto;
+ 	border: 1px solid #000;
+ 	overflow: hidden;
+ }
+ .SubCategoryBox ul li {
+	float: left;
+	width: 200px;
+	line-height: 170%;
+ }
+ .showmore {
+ 	display: block;
+ 	width: 150px;
+    height: 24px;
+ 	clear: both;
+ 	margin: 20px auto 10px;
+ 	border: 1px solid #000;
+ 	background: url(../images/down.gif) no-repeat;
+ }
+ .showmore a span {
+	display: inline-block;
+	margin-left: 15px;
+ }
+ .change {
+ 	color: #62CD80;
+ }
+ .change a {
+ 	color: #62CD80;
+ }

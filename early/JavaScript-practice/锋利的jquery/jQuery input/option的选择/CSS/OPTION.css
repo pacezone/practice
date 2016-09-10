@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-10-02 13:30:16
+ * @version $Id$
+ */
+span {
+	display: block;
+	background: #2D6597;
+	border: 1px solid #2E9879;
+	color: #fff;
+	margin: 5px 0;
+}
+.centent {
+	float: left;
+	margin:0 20px;
+}
+.form2 div {
+	margin: 10px 0;
+}

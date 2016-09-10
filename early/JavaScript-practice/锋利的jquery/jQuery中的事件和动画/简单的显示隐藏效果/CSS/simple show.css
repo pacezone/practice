@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-24 16:13:31
+ * @version $Id$
+ */
+div, h5 {
+	font-family: Arial, Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	border: 0;
+	margin: 0;
+}
+#panel {
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #BFC55C;
+}
+.head {
+	color: #fff;
+	background: #BFC55C;
+	line-height: 230%;
+}
+.content {
+	text-indent: 2em;
+	padding: 5px;
+	display: none;
+}
+.highlight {
+	color: #A85DC6;
+	background: #DA46DD;
+}

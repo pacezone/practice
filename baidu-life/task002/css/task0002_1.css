@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-27 15:48:01
+ * @version $Id$
+ */
+button {
+	position: relative;
+}
+button span {
+	position: absolute;
+	width: 100px;
+	top: -22px;
+	left: 8px;
+	color: red;
+}
