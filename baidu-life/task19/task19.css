@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-10 18:52:28
+ * @version $Id$
+ */
+ * {
+ 	font-size: 16px;
+ }
+.wrap {
+	width: 80%;
+	margin-top: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+.showArea {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+	align-items: flex-end;
+	height: 330px;
+	margin-top: 50px;
+	
+}
+.showArea p {
+	display: inline-block;
+	background: #9AC0CD;
+	margin-right: 5px;
+	color: #fff;
+	text-align: center;
+}
+.inputArea i {
+	display: block;
+	margin-bottom: 30px;
+}
+.speed {
+	display: inline-block;
+	font-size: 0;
+}
+.speed input {
+	width: 60px;
+	margin-left: 10px;
+	height: 20px;
+	line-height: 20px;
+}
+p.active {
+	background: #FF8247;
+}
