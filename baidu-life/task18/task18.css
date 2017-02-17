@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-09 19:37:10
+ * @version $Id$
+ */
+ *{
+ 	font-size: 16px;
+ }
+.wrap {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+.inputArea i {
+	width: 50px;
+	display: inline-block;
+}
+.showArea span {
+	display: block;
+	float: left;
+	background: #FF3030;
+	color: #fff;
+	padding: 5px 10px;
+	margin-top: 10px;
+	margin-right: 5px;
+
+}
