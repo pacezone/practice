@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-17 14:18:00
+ * @version $Id$
+ */
+ body {
+ 	width: 1200px;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	margin-top: 50px;
+ }
+ .dispaly {
+ 	margin-top: 20px;
+ }
+ .dispaly p {
+	display: inline-block;
+	background: #FF8247;
+	color: #fff;
+	padding: 7px 12px ;
+	margin-right: 5px;
+	margin-bottom: 5px;
+ }
+ span.red {
+ 	background: #4876FF;
+ 	width: 100%;
+ 	height: 100%;
+ }
