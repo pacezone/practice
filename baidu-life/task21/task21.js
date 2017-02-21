@@ -26,6 +26,7 @@ function list(input,wrapper) {
 }
 list.prototype = {
 	dataVal:function() {
+		this.arr = (this.getArr()[0] != undefined)? this.getArr():[];
 		var str = this.data.value.trim();
 		if (str) {
 			var arr = str.split(/[^a-zA-Z0-9\u4e00-\u9fa5]+/).filter(function(e) {
@@ -36,8 +37,14 @@ list.prototype = {
 				}
 			});
 			this.arr = this.limit(this.unique(arr.concat(this.arr)));
-
 		}
+	},
+	getArr:function(){
+		var arr = [];
+		this.wrapper.childNodes.forEach(function(d){
+			arr.push(d.innerHTML)
+		})
+		return arr;
 	},
 	unique:function(arr) {
 		var newArr = arr.filter(function(e,index){
@@ -61,21 +68,59 @@ list.prototype = {
 		html = this.arr.map(function(e){
 			return '<p>'+e+'</p>'
 		}).join('');
-		console.log(html)
 		this.wrapper.innerHTML = html; 
+		this.getArr()
+		
 	}
+	// del:function(){
+
+	// }
+	
+	
 }
 var tag = new list('Tag','dispalyTag');
 var hobby = new list('textarea','dispalyHobby')
 addEvent($('Tag'),'keydown',function(e) {
 	var e = e || window.event;
 	if (e.keyCode == 13||e.keyCode ==32||e.keyCode ==188) {
-		tag.dataVal()
-		tag.render();	
+		tag.dataVal();
+		tag.render();
 	}
 });
 addEvent($('hobbyBtn'),'click',function() {
 	hobby.dataVal();
 	hobby.render()
+});
+var divArea = document.getElementsByTagName('div');
+
+var del = function(wrapper){
+	addEvent(wrapper,'mouseover',function(e) {
+	var e = e || window.event;
+	if (e.target&&e.target.nodeName == 'P') {
+		var html = e.target.innerHTML;
+		e.target.innerHTML = '<span>删除:</span>'+html;
+		addEvent(e.target,'mouseout',function(){
+			var context = this.innerHTML.replace('<span>删除:</span>','');
+			this.innerHTML = context;
+		});
+
+	}
+
+	})
+addEvent(wrapper,'click',function(e){
+	var self = this;
+	var e = e || window.event;
+	if (e.target&&e.target.nodeName == 'P') {
+		self.removeChild(e.target);
+	}
 })
+}
+
+
+del($('dispalyTag'))
+del($('dispalyHobby'))
+
+
+
+
  
