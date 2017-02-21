@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-18 14:11:45
+ * @version $Id$
+ */
+#textarea {
+	margin-top: 50px;
+}
+/*div {
+	height: 100px;
+}*/
+div p {
+	border: 1px solid #A2CD5A;
+	padding: 5px 9px;
+	color: #A2CD5A;
+	border-radius: 3px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
